@@ -1,0 +1,1395 @@
+{
+	"info": {
+		"_postman_id": "6e40962c-7496-41bc-b382-6cf47cb13843",
+		"name": "MAv3.1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12921914"
+	},
+	"item": [
+		{
+			"name": "Player",
+			"item": [
+				{
+					"name": "Play",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/player/play?id=-1&kind=owntone",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"player",
+								"play"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "-1"
+								},
+								{
+									"key": "kind",
+									"value": "owntone"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Player",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/player",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"player"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stop",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/player/stop",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"player",
+								"stop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pause",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/player/pause",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"player",
+								"pause"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Volume",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/player/volume?volume=10",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"player",
+								"volume"
+							],
+							"query": [
+								{
+									"key": "volume",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Repeat",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/player/repeat?state=all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"player",
+								"repeat"
+							],
+							"query": [
+								{
+									"key": "state",
+									"value": "all"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shuffle",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/player/shuffle?state=true",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"player",
+								"shuffle"
+							],
+							"query": [
+								{
+									"key": "state",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Next",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/player/next",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"player",
+								"next"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Previous",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/player/previous",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"player",
+								"previous"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "Directories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/libraries/local",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"local"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DirectoryTracks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/libraries/local/6/tracks?page=0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"local",
+								"6",
+								"tracks"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Queue",
+			"item": [
+				{
+					"name": "GetQueue",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/queue",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"queue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddTracks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n        {\r\n            \"kind\": \"cloud\",\r\n            \"data\": \"ZZDFCEDA\",\r\n            \"is_played\": false\r\n        },\r\n        {\r\n            \"kind\": \"cloud\",\r\n            \"data\": \"ZZF0WU8W\",\r\n            \"is_played\": true\r\n        }\r\n    ],\r\n    \"count\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/music/queue",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"queue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MoveTracks",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n        {\r\n            \"id\": 10,\r\n            \"position\": 4\r\n        },\r\n        {\r\n            \"id\": 11,\r\n            \"position\": 2\r\n        }\r\n    ],\r\n    \"count\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/music/queue",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"queue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MoveSpecificTracks",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/queue/12?position=3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"queue",
+								"12"
+							],
+							"query": [
+								{
+									"key": "position",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveTracks",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"count\": 2,\r\n    \"items\": [\r\n        7, 8\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/music/queue?clear=true",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"queue"
+							],
+							"query": [
+								{
+									"key": "clear",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveSpecificTracks",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/queue/11",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"queue",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Output",
+			"item": [
+				{
+					"name": "GetOutputs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/music/output",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"output"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateOutputs",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"count\": 1,\r\n    \"items\": [\r\n        {\r\n            \"id\": 823288298057,\r\n            \"selected\": true\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/music/output",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"music",
+								"output"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Playlist",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/libraries/playlist",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"playlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n        \"KPop\",\r\n        \"CPop\"\r\n    ],\r\n    \"count\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/libraries/playlist",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"playlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n        8, 9, 10\r\n    ],\r\n    \"count\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/libraries/playlist",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"playlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveSpecific",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/libraries/playlist/8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"playlist",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rename",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n        {\r\n            \"id\": 7,\r\n            \"name\": \"Pop\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/libraries/playlist",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"playlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RenameSpecific",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/libraries/playlist/9?name=Hi",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"playlist",
+								"9"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Hi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTracks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/libraries/playlist/9/tracks?page=0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"playlist",
+								"9",
+								"tracks"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddTracks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n\r\n    ],\r\n    \"count\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/libraries/playlist/7/tracks",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"playlist",
+								"7",
+								"tracks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveTracks",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"count\": 2,\r\n    \"items\": [\r\n        6, 7\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/libraries/playlist/7/tracks",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"playlist",
+								"7",
+								"tracks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Network",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/device/network",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"network"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Scan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/device/network/scan",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"network",
+								"scan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConfigureNetwork",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kind\": \"wlan\",\r\n    \"mode\": \"dhcp\",\r\n    \"ssid\": \"303\",\r\n    \"bssid\": \"00:BF:AF:CE:7A:49\",\r\n    \"passphrase\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/device/network",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"network"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Process",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/device/network/complete?completed=false",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"network",
+								"complete"
+							],
+							"query": [
+								{
+									"key": "completed",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Device",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/device",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rename",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Charset",
+								"value": "utf-8",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Phòng Khách\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/device/rename",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"rename"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reboot",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/device/reboot",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"reboot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOutput",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/device/output",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"output"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateOutput",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/device/output?port=wattage",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"output"
+							],
+							"query": [
+								{
+									"key": "port",
+									"value": "wattage"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bluetooth",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/device/bluetooth",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"bluetooth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ChangePowered",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/device/bluetooth/powered?status=true",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"bluetooth",
+								"powered"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ChangeRestricted",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/device/bluetooth/restricted?status=true",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"bluetooth",
+								"restricted"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Scan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/device/bluetooth/scan",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"bluetooth",
+								"scan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllowingDeviceGet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/device/bluetooth/allowing-device",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"bluetooth",
+								"allowing-device"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllowingDeviceAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n        {\r\n            \"address\": \"F0:18:98:4D:77:A7\",\r\n            \"name\": \"Tai’s MacBook Pro (9)\",\r\n            \"rssi\": -83\r\n        },\r\n        {\r\n            \"address\": \"E8:2A:EA:55:12:42\",\r\n            \"name\": \"RD_MINHNT\",\r\n            \"rssi\": -67\r\n        },\r\n        {\r\n            \"address\": \"80:91:33:21:6E:58\",\r\n            \"name\": \"HANHF\",\r\n            \"rssi\": -60\r\n        },\r\n        {\r\n            \"address\": \"4C:1D:96:93:07:87\",\r\n            \"name\": \"LATITUDE-5500\",\r\n            \"rssi\": -55\r\n        },\r\n        {\r\n            \"address\": \"64:DD:E9:94:19:17\",\r\n            \"name\": \"Mi 11 Lite\",\r\n            \"rssi\": -48\r\n        }\r\n    ],\r\n    \"count\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/device/bluetooth/allowing-device",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"bluetooth",
+								"allowing-device"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllowingDeviceRemove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n        \"00:15:5d:19:90:65\",\r\n        \"00:BF:AF:7F:00:6B\"\r\n    ],\r\n    \"count\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/device/bluetooth/allowing-device",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"device",
+								"bluetooth",
+								"allowing-device"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OTA",
+			"item": [
+				{
+					"name": "GetLink",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Lumi-Api-Key",
+								"value": "98CPB8ITIRGHVO3OJ5QT",
+								"type": "text"
+							},
+							{
+								"key": "X-Lumi-Languag",
+								"value": "en-us",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"info_firmware\":\"Hi!\",\"mac\":\"00:bf:af:ce:7f:4f\",\"version_min_id\":0,\"version_name\":\"0.0.0\",\"version_number\":0}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.smarthome.lumi.com.vn/ota/check-update-ota",
+							"protocol": "https",
+							"host": [
+								"api",
+								"smarthome",
+								"lumi",
+								"com",
+								"vn"
+							],
+							"path": [
+								"ota",
+								"check-update-ota"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cloud",
+			"item": [
+				{
+					"name": "RequestSaveTracks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n        \"ZZC7B6I8\"\r\n    ],\r\n    \"count\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/libraries/cloud/downloading-tracks",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"cloud",
+								"downloading-tracks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSaveTracks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/libraries/cloud/downloading-tracks",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"libraries",
+								"cloud",
+								"downloading-tracks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Automation",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/automations",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"automations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/automations/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"automations",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Good morning\",\r\n\t\"enable\": true,\r\n\t\"recipe\": {\r\n\t\t\"actions\": [\r\n\t\t\t{\r\n\t\t\t\t\"player\": {\r\n\t\t\t\t\t\"duration\": {\r\n\t\t\t\t\t\t\"minute\": 585\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"items\": [\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\"kind\": \"cloud\",\r\n\t\t\t\t\t\t\t\"values\": [\r\n\t\t\t\t\t\t\t\t\"ZZF0WU8W\"\r\n\t\t\t\t\t\t\t]\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"outputs\": [\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\"id\": 110913293616496,\r\n\t\t\t\t\t\t\t\"name\": \"LM-MA3_7634\",\r\n\t\t\t\t\t\t\t\"volume\": 20\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"repeat\": \"all\",\r\n\t\t\t\t\t\"shuffle\": true,\r\n\t\t\t\t\t\"status\": \"playing\",\r\n\t\t\t\t\t\"volume\": 50\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"triggers\": {\r\n\t\t\t\"or\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"and\": [\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\"specific\": {\r\n\t\t\t\t\t\t\t\t\"offset\": {\r\n\t\t\t\t\t\t\t\t\t\"minute\": 691\r\n\t\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\t\"reference\": \"midnight\"\r\n\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t]\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\t}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/automations",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"automations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change State",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/automations/2/enable?status=true",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"automations",
+								"2",
+								"enable"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"enable\": true,\r\n            \"id\": 2,\r\n            \"name\": \"Good \",\r\n            \"recipe\": {\r\n                \"actions\": [\r\n                    {\r\n                        \"player\": {\r\n                            \"duration\": {\r\n                                \"minute\": 45\r\n                            },\r\n                            \"items\": [\r\n                                {\r\n                                    \"kind\": \"track\",\r\n                                    \"values\": [\r\n                                        1,\r\n                                        4,\r\n                                        7\r\n                                    ]\r\n                                }\r\n                            ],\r\n                            \"outputs\": [\r\n                                {\r\n                                    \"id\": 110913293616496,\r\n                                    \"name\": \"LM-MA3_7634\",\r\n                                    \"volume\": 20\r\n                                }\r\n                            ],\r\n                            \"repeat\": \"all\",\r\n                            \"shuffle\": true,\r\n                            \"status\": \"playing\",\r\n                            \"volume\": 50\r\n                        }\r\n                    }\r\n                ],\r\n                \"triggers\": {\r\n                    \"or\": [\r\n                        {\r\n                            \"and\": [\r\n                                {\r\n                                    \"specific\": {\r\n                                        \"offset\": {\r\n                                            \"minute\": 60\r\n                                        },\r\n                                        \"reference\": \"midnight\"\r\n                                    }\r\n                                },\r\n                                {\r\n                                    \"repeat\": {\r\n                                        \"week\": [\r\n                                            \"wednesday\",\r\n                                            \"thursday\",\r\n                                            \"friday\",\r\n                                            \"saturday\"\r\n                                        ]\r\n                                    }\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            }\r\n        }\r\n}\r\n            ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/automations/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"automations",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Specific Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/automations/6",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"automations",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n        12, 13, 14\r\n    ],\r\n    \"count\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/automations",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"automations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
